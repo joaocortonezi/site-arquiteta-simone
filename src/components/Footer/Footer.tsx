@@ -43,7 +43,7 @@ export default function Footer() {
         <div className={styles.bottomSection}>
           <p>© {currentYear} Arquiteta Simone Catarina. Todos os direitos reservados.</p>
           <p>
-            Desenvolvido por <a href="#" className={styles.developer}>Catani Designer</a>
+            Desenvolvido por <a href="https://molda.io" target="_blank" rel="noopener noreferrer" className={styles.developer}>molda.io</a>
           </p>
         </div>
       </div>
