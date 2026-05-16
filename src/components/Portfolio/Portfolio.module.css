@@ -1,0 +1,142 @@
+.portfolioWrapper {
+  position: relative;
+  height: 250vh; /* Better scroll control */
+  background-color: var(--bg-primary);
+}
+
+.portfolioSticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: max(2rem, calc((100vw - 1400px) / 2 + 2rem));
+  padding-right: 4rem;
+  position: relative;
+  background-color: var(--bg-secondary);
+}
+
+.rightColumn {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contentWrapper {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* to respect padding */
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 300;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+}
+
+.description {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2.5rem;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  border-radius: 50px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.linkButton:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.progressIndicator {
+  position: absolute;
+  bottom: 4rem;
+  left: max(2rem, calc((100vw - 1400px) / 2 + 2rem));
+  display: flex;
+  gap: 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--text-primary);
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.dotActive {
+  opacity: 1;
+}
+
+@media (max-width: 968px) {
+  .portfolioSticky {
+    flex-direction: column;
+  }
+  .leftColumn {
+    padding: 4rem 2rem;
+    order: 2;
+  }
+  .rightColumn {
+    order: 1;
+    height: 60vh;
+  }
+}
