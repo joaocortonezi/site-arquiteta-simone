@@ -129,3 +129,21 @@
     order: -1;
   }
 }
+
+@media (max-width: 480px) {
+  .specialty {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .rightColumn {
+    height: 350px;
+  }
+  .paragraph {
+    font-size: 1rem;
+  }
+  .listItem {
+    font-size: 0.95rem;
+  }
+}

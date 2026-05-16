@@ -55,3 +55,21 @@
   background-color: transparent;
   color: var(--bg-primary);
 }
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 6rem 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .button {
+    padding: 1rem 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

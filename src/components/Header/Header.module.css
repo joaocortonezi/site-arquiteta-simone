@@ -107,7 +107,17 @@
 }
 
 @media (max-width: 768px) {
-  .nav {
+  .navLink {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+  .ctaButton {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.7rem;
   }
 }
