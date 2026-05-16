@@ -18,7 +18,7 @@ const projects = [
     title: "Condomínio\nFalcone",
     category: "Comercial • Instituição",
     description: "Projeto desenvolvido para a Construtora Falcone. Condomínio residencial com 10 imóveis, todos individualizados pelo processo de instituição de condomínio.",
-    image: "/images/project2.png",
+    image: "/images/project2.jpg",
   },
   {
     id: 3,
