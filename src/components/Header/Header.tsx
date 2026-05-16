@@ -30,7 +30,7 @@ export default function Header() {
     <header className={clsx(styles.header, isScrolled && styles.scrolled)}>
       <div className={styles.container}>
         <a href="#" onClick={(e) => handleScrollTo(e, 'top')} className={clsx(styles.logo, !isScrolled && styles.logoLight)}>
-          Simone Catarina
+          <img src="/images/logo-full.png" alt="Simone Catarina" className={styles.logoImage} />
         </a>
         <nav className={styles.nav}>
           <a href="#sobre" onClick={(e) => handleScrollTo(e, 'sobre')} className={clsx(styles.navLink, !isScrolled && styles.navLinkLight)}>Sobre</a>

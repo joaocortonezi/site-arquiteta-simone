@@ -16,7 +16,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.topSection}>
           <div className={styles.brand}>
-            <span className={styles.logo}>Simone Catarina</span>
+            <img src="/images/logo-full.png" alt="Simone Catarina" className={styles.logoImage} />
             <p className={styles.brandDesc}>
               Arquitetura e Urbanismo com precisão legal, transformando conceitos em empreendimentos viáveis e rentáveis.
             </p>
